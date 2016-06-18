@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => 'region',
-	'database' => 'farmdelivery',
+	'hostname' => 'db630557775.db.1and1.com',
+	'username' => 'dbo630557775',
+	'password' => 'my.1and1.com',
+	'database' => 'db630557775',
 	'dbdriver' => 'mysql',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
