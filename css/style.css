@@ -1,0 +1,18 @@
+#par form{
+  padding: 25px;
+  text-align: right;
+  width: 400px;
+}
+
+#par input[type=text]{
+  text-align: center;
+  width: 70%;
+}
+
+#par label{
+  float: left;
+}
+
+par p{
+  margin: 10px 0;
+}

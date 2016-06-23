@@ -18,8 +18,25 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+
+	public function insert_Patient()
+	{
+		$patient = array(
+			'Name' => $this->input->post('Name'),
+			'Age' => $this->input->post('Age'),
+			'Email' => $this->input->post('Email'),
+		  );
+		$this->load->model('Patient_model');
+		if ($this->Patient_model->insert_Patient($patient)){
+			redirect('welcome_message');
+		}
+	}
+
 	public function index()
 	{
+#		$data['title'] = 'Welcome';
+#		$data['main_content'] = 'Welcome';
+		#$this->load->view('Welcome');
 		$this->load->view('welcome_message');
 	}
 }
