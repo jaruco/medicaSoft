@@ -11,4 +11,10 @@ class Patient_model extends CI_Controller {
       return false;
     }
   }
+
+  public function get_All_Patients(){
+    $this->db->order_by('Email DESC');
+    $q = $this->db->get('Patient');
+    return $q->result);
+  }
 }
